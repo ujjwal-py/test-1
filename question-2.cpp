@@ -1,63 +1,20 @@
-//write the program for largest of 3 numbers 
-
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
-int main() {
-    int a, b,c;
-    cin >> a; 
+
+int main() 
+{
+    int a, b, c;
+    cin >> a;
     cin >> b;
     cin >> c;
-    
-    if ( a == b) {
-        if ( a > c) {
-            cout << "Two numbers are equally the largest" << endl;
-        }
-        else {
-            cout << "The largest number is " << c << endl;
-        }
-    }
-    else if (b == c) {
-        if (b > a) {
-            cout << "Two numbers are equally the largest" << endl;
-        }
-        else {
-            cout << "The largest number is " << a << endl;
-        }
-    }
-    else if (a == c) {
-        if (a > b) {
-            cout << "The largest number is " << b << endl;
-        }
-        else {
-            cout << "Two numbers are equally the largest" << endl;
-        }
-    }
-    else if (a > b) {
-        if (a > c) {
-            cout << "The largest Number is " << a << endl;
-        }
-        else {
-            cout << "The largest Number is " << c << endl;
-        }
-    }
-    else if (b > a) {
-        if (b > c) {
-            cout << "The largest Number is " << b << endl;
-        }
-        else {
-            cout << c << " is the largest";
-        }
-    }
-    else if (c > a) {
-        if (c > b) {
-            cout << "The largest number is " << c << endl;
-        }
-         else {
-            cout << b << " is the largest";
-         }
+    if (a > b && a > c) cout << "The greatest number is " << a;
+    else if (b > a && b > c) cout << "The greates number is " << b;
+    else if (c > a && c > b) cout << "The greatest number is " << c;
+    else if ((a==b && a > c) || (b == c) && b > a || (a == c) && a > b) {
+      cout << "Two numbers are the largest";
     }
     else {
-        cout << "All numbers are Equal";
+      cout << "All numbers are Equal" << endl;
     }
-
+    return 0;
 }
