@@ -24,12 +24,12 @@ int main() {
             cout << "The largest number is " << a << endl;
         }
     }
-    else if ( a == c) {
+    else if (a == c) {
         if (a > b) {
-            cout << "Two numbers are equally the largest" << endl;
+            cout << "The largest number is " << b << endl;
         }
         else {
-            cout << "The largest number is " << endl;
+            cout << "Two numbers are equally the largest" << endl;
         }
     }
     else if (a > b) {
