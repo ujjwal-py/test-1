@@ -7,8 +7,8 @@ int main() {
     cout << "Enter a Number to Reverse - " << endl;
     cin >> n;
     int p;
-    if (n > 9 && n < 100) p = 2;
-    else if (n > 100 && n < 1000 ) p = 3;  
+    if (n > 9 && n < 100) p = 1;
+    else if (n > 99 && n < 1000 ) p = 2;  
     t = n;
     while (t > 0) {
         digit = t % 10;
